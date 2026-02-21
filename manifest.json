@@ -1,0 +1,21 @@
+{
+  "name": "PhotoFlow - Free HD Images",
+  "short_name": "PhotoFlow",
+  "description": "Search and download free HD photos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4361ee",
+  "theme_color": "#4361ee",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/4361ee/ffffff?text=PF",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/4361ee/ffffff?text=PF",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

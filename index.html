@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore captivating images effortlessly with the Image Search App. Powered by the Unsplash API, discover a wide range of visuals to spark inspiration. Search, browse, and enjoy a seamless image discovery experience. Try it now!"
+    />
+    <title>PhotoFlow - Free HD Images</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4361ee">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
+<meta name="google-adsense-account" content="ca-pub-0000000000000000">
+  </head>
+  <body>
+    <!-- Header Ad -->
+<div style="text-align:center; padding:10px; background:#f8f9fa; margin-bottom:15px;">
+  <p style="font-size:10px; color:#999; margin:0;">Advertisement</p>
+  <div style="min-height:90px; background:#e9ecef; display:flex; align-items:center; justify-content:center; border-radius:4px;">
+    <span style="color:#adb5bd;">[AdSense 728x90]</span>
+  </div>
+</div>
+    <header>
+      
+      <div class="container">
+        <div class="caption text-center">
+          <h1 class="mb-5 mt-5 mt-md-0">PhotoFlow</h1>
+        </div>
+        <div
+          class="search d-flex justify-content-center align-items-center gap-2"
+        >
+          <input
+            id="searchInput"
+            type="text"
+            class="form-control"
+            placeholder="Search free HD photos..."
+          />
+          <button class="btn btn-custom" id="searchBtn">Search</button>
+        </div>
+      </div>
+    </header>
+    <!-- Sidebar Ad -->
+<div style="text-align:center; padding:10px; background:#f8f9fa; margin:20px auto; max-width:300px;">
+  <p style="font-size:10px; color:#999; margin:0;">Advertisement</p>
+  <div style="min-height:250px; background:#e9ecef; display:flex; align-items:center; justify-content:center; border-radius:4px;">
+    <span style="color:#adb5bd;">[AdSense 300x250]</span>
+  </div>
+</div>
+    <main>
+      <section id="imgs" class="pt-5">
+        <div class="container">
+          <div class="row g-4" id="inputResults">
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1600647993560-11a92e039466?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Flowers</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2043&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Animals</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1621915213989-0812987ecd06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Cars</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1777&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Landscapes</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1512540452972-baac55d40ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Art</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1601435119596-7cc938a5cbf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Quotes</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Interior Design</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Random</h2>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-custom mx-auto d-none" id="showMoreBtn">
+              Show more
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="text-center p-3">© 2025 PhotoFlow. Powered by Unsplash</p>
+      
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

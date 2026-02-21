@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --section-bg-color: #f8f9fa;
+}
+
+::selection {
+  background-color: #4361ee;
+  color: #fff;
+}
+
+body {
+  letter-spacing: 1px;
+  font-family: "Manrope", sans-serif;
+  color: #2d3436;
+  background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+h1 {
+  color: #4361ee;
+}
+
+.btn-custom {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+.btn-custom:hover {
+  background-color: #3651d4;
+  color: white;
+}
+
+.navbar {
+  background-color: #4361ee !important;
+}
+
+header {
+  background-color: var(--section-bg-color);
+}
+
+.search {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-control:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+}
+
+section {
+  background-color: var(--section-bg-color);
+  min-height: 100vh;
+}
+
+.card {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: none;
+  background-color: #ffffff;
+}
+
+#cardImg {
+  overflow: hidden;
+}
+
+.card-text {
+  text-decoration: none;
+  color: #2d3436;
+}
+
+.card img {
+  height: 330px;
+  object-fit: cover;
+  transition: transform 250ms ease-in-out, opacity 100ms linear;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.fixedCard {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardTitle {
+  position: absolute;
+  background-color: #4361ee;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  left: 50%;
+  top: -20%;
+  transform: translate(-50%, -50%);
+  transition: top 500ms ease-in-out;
+}
+
+.fixedCard:hover .cardTitle {
+  top: 50%;
+}
+
+.fixedCard:hover img {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: var(--section-bg-color);
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+.credit {
+  font-size: 11px;
+  color: #888;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.credit a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.download-btn {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 13px;
+  text-decoration: none;
+}
